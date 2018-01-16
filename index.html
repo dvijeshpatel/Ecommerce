@@ -20,8 +20,13 @@
 					Ecommerce 
 					</h1>
 					<input type="text" placeholder="search for item " id="search"/>
-			
-					<button  id="cart" ><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+			       
+                   <i id="search_button" class="fa fa-search" aria-hidden="true"></i>
+                
+					<button  id="cart" ><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    <div id = "countInCart">
+                        </div>
+                    </button>
                <!-- <button  id="checout" >Checkout</button>-->
                
 
@@ -29,15 +34,16 @@
             
             <div id="navigation_bar">
                  <ul id="menu">
-									<li><a href="#">HOME</a></li>
+									<li  onClick=" clickOnItem('','');"><a href="#">HOME</a></li>
                                     
-                                    <li><a >ELECTRONICS</a>
+                                    <li><a>ELECTRONICS</a>
                                         <i class="fa fa-arrow-down" aria-hidden="true"></i>
 
                                         <ul>
-											<li onClick="showMobiles();"><a>Mobiles</a></li>
-											<li  onClick="showLaptops();"><a>Laptops</a></li>
-											<li><a>Cameras</a></li>
+											<li id="mobiles" onClick=" clickOnItem('electronics','mobiles');"><a>Mobiles</a></li>
+											<li id="laptops" onClick=" clickOnItem('electronics','laptops');"><a>Laptops</a></li>
+											<li id="cameras" onClick=
+                                                " clickOnItem('electronics','cameras');"><a>Cameras</a></li>
 										</ul>
 								 </li>
                                         <li><a href="#">APPLIANCES</a>
@@ -106,7 +112,12 @@
        
         </div>
             <div id="footer">
-
+                <ul>
+                    <li>Contact Us</li>
+                    <li>About Us</li>
+                    <li>Faq</li>
+                 
+                </ul>
 
             </div>
         </div>
