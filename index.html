@@ -6,36 +6,43 @@
 	Ecommerce Site
 </title>
 <link rel="stylesheet" type="text/css" href="https://meyerweb.com/eric/tools/css/reset/reset.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="./css/style.css" />
-
+    
 </head>
 	<body>
-		<div class="root">
-			<div class="header" >
-				<div class="label">
-					<h1 style="color:white;text-align:center;font-size:25px">
-					Ecommerce Website
+		<div id="root">
+          
+
+			<header id="header" >
+			
+					<h1 id="label" >
+					Ecommerce 
 					</h1>
-				</div>
-				<div class="search">
-					<input type="text" style="width:80%;margin-left:10%"/>
-				</div>
-				<div class="cart" >
-					<button style="font-size:16px;border-radius:5px">Cart</button>
-				</div>
-			</div>
-            <div class="navigation_bar">
-                 <div style="position:relative;top:10px">
-                <ul id="menuitems">
+					<input type="text" placeholder="search for item " id="search"/>
+			
+					<button  id="cart" ><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+               <!-- <button  id="checout" >Checkout</button>-->
+               
+
+			</header>
+            
+            <div id="navigation_bar">
+                 <ul id="menu">
 									<li><a href="#">HOME</a></li>
-                 <li><a href="#">ELECTRONICS</a>
-                    <ul>
-											<li><a>Mobiles</a></li>
-											<li><a>Laptops</a></li>
+                                    
+                                    <li><a >ELECTRONICS</a>
+                                        <i class="fa fa-arrow-down" aria-hidden="true"></i>
+
+                                        <ul>
+											<li onClick="showMobiles();"><a>Mobiles</a></li>
+											<li  onClick="showLaptops();"><a>Laptops</a></li>
 											<li><a>Cameras</a></li>
 										</ul>
 								 </li>
-            	  <li><a href="#">APPLIANCES</a>
+                                        <li><a href="#">APPLIANCES</a>
+                                            <i class="fa fa-arrow-down" aria-hidden="true"></i>
+
 									<ul>
 										<li><a>Televisions</a></li>
 										<li><a>Washing Machines</a></li>
@@ -45,6 +52,8 @@
 								</li>
 
             	  <li><a href="#">FERNITURE</a>
+                      <i class="fa fa-arrow-down" aria-hidden="true"></i>
+
 									<ul>
 										<li><a>Bed</a></li>
 										<li><a>Sofa</a></li>
@@ -52,6 +61,8 @@
 									</ul>
 								</li>
             	  <li><a href="#">SPORTS</a>
+                      <i class="fa fa-arrow-down" aria-hidden="true"></i>
+
 									<ul>
 										<li><a>Cricket</a></li>
 										<li><a>Badminton</a></li>
@@ -59,27 +70,49 @@
 									</ul>
 								</li>
                </ul>
-         </div>
+        </div>
+        <div id="product_box">
+     <!--  <div class="single_product">
+                       <img src="./assets/items/electronics/mobiles/1.png"/>
+           <br/>
+           <button class="product_button">Add to Cart</button>
+            </div>
+             <div class="single_product">
+                       <img src="./assets/items/electronics/mobiles/1.png"/>
+           <br/>
+           <button class="product_button">Add to Cart</button>
+            </div>
+             <div class="single_product">
+                       <img src="./assets/items/electronics/mobiles/1.png"/>
+           <br/>
+           <button class="product_button">Add to Cart</button>
+            </div>
+             <div class="single_product">
+                       <img src="./assets/items/electronics/mobiles/1.png"/>
+           <br/>
+           <button class="product_button">Add to Cart</button>
+            </div>
+             <div class="single_product">
+                       <img src="./assets/items/electronics/mobiles/1.png"/>
+           <br/>
+           <button class="product_button">Add to Cart</button>
+            </div>
+-->
+           
+         
+         
+         
+
+       
+        </div>
+            <div id="footer">
+
 
             </div>
-            <div class="content_area">
-            	<div class="leftside">
-            		Left
-            	</div>
-            	<div class="rightside">
-          <img src="http://dreamwebsoftech.com/img/ecom.jpg" style="overflow:hidden;height:100%;width:100%;"/>
-
-							</div>
-            </div>
-            <div class="footer">
-            	Footer
-            <div>
-
-
-
-
-
-		</div>
-      </div>
+        </div>
+        
 	</body>
+    <script type="text/javascript" src="js/app.js">
+    </script>
+    
 </html>
