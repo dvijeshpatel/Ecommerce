@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8"  content="text/html">
+      <title>
+         Ecommerce Site
+      </title>
+      <link rel="stylesheet" type="text/css" href="https://meyerweb.com/eric/tools/css/reset/reset.css"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" type="text/css" href="./css/style2.css" />
+   </head>
+   <body>
+      <div id="root">
+         <header id="header" >
+            <div id="label" >
+               <img id="logo" src="./assets/background/logo.jpg">
+            </div>
+            <div id="phone">
+               <i id="phone_icon" class="fa fa-phone" aria-hidden="true"></i>
+               <h2 id="mobile_no">
+                  Call Us: +91 8140476157   
+               </h2>
+            </div>
+            <button  id="cart" >
+               <i id="cart_logo" class="fa fa-shopping-cart" aria-hidden="true"></i>
+               <div id = "countInCart">
+               </div>
+               <h2 id="cart_name">
+                  SHOPPING CART
+               </h2>
+            </button>
+            <!-- <button  id="checout" >Checkout</button>-->
+         </header>
+         <div id="navigation_bar">
+            <ul id="menu">
+               <li  onClick=" clickOnItem('','');"><a href="#"><i class="fa fa-home" aria-hidden="true"></i>
+                  </a>
+               </li>
+               <li>
+                  <a>Electronics</a>
+                  <i class="fa fa-caret-down" aria-hidden="true"></i>
+                  <ul>
+                     <li id="mobiles" onClick=" clickOnItem('electronics','mobiles');"><a>Mobiles</a></li>
+                     <li id="laptops" onClick=" clickOnItem('electronics','laptops');"><a>Laptops</a></li>
+                     <li id="cameras" onClick=
+                        " clickOnItem('electronics','cameras');"><a>Cameras</a></li>
+                  </ul>
+               </li>
+               <li>
+                  <a href="#">Appliances</a>
+                  <i class="fa fa-caret-down" aria-hidden="true"></i>
+                  <ul>
+                     <li onClick=" clickOnItem('appliances','telivisons');"><a>Televisions</a></li>
+                     <li onClick="clickOnItem('appliances','washing_machines');"><a>Washing Machines</a></li>
+                     <li onClick="clickOnItem('appliances','refrigarators');"><a>Refrigarator</a></li>
+                  </ul>
+               </li>
+               <li>
+                  <a href="#">Furniture</a>
+                  <i class="fa fa-caret-down" aria-hidden="true"></i>
+                  <ul>
+                     <li onClick=" clickOnItem('fernitures','beds');"><a>Bed</a></li>
+                     <li onClick=" clickOnItem('fernitures','sofas');"><a>Sofa</a></li>
+                     <li  onClick=" clickOnItem('fernitures','chairs');"><a>Chairs</a></li>
+                  </ul>
+               </li>
+               <li>
+                  <a href="#">Sports</a>
+                  <i class="fa fa-caret-down" aria-hidden="true"></i>
+                  <ul>
+                     <li><a>Cricket</a></li>
+                     <li><a>Badminton</a></li>
+                     <li><a>Football</a></li>
+                  </ul>
+               </li>
+            </ul>
+            <input type="text" placeholder="search for item " id="search"/>
+            <i id="search_button" class="fa fa-search" aria-hidden="true"></i>
+         </div>
+        <div id="checked_box">
+            <div class="row" id="checked_title" >
+               <div class="col-6">  
+               </div>
+               <div class="col-3" style="padding-left:60px">
+                  Price
+               </div>
+               <div class="col-1">
+                  Quantity
+               </div>
+               <div class="col-2">
+               </div>
+            </div>
+            <div class="row checked_product">
+               <div class="col-2">
+                  <img src="./assets/items/electronics/mobiles/1.png"/>
+               </div>
+               <div class="col-4 item_name">
+                  Samsung Galexy Note 8
+               </div>
+               <div class="col-3 item_price">
+                  <i class="fa fa-inr" aria-hidden="true"></i>10000
+               </div>
+               <div class="col-1">
+                  <select name="quantity" class="select_quantity">
+                     <option>1</option>
+                     <option>2</option>
+                     <option>3</option>
+                     <option>4</option>
+                  </select>
+               </div>
+               <div class="col-2">
+                  <button class="product_button">
+                  <i class="fa fa-times" aria-hidden="true" style="font-size: 16px;margin-right: 10px"></i>
+                  Remove
+                  </button>
+               </div>
+            </div>
+            <div class="row checked_product">
+               <div class="col-2">
+                  <img src="./assets/items/electronics/mobiles/1.png"/>
+               </div>
+               <div class="col-4 item_name">
+                  Samsung Galexy Note 8
+               </div>
+               <div class="col-3 item_price">
+                  <i class="fa fa-inr" aria-hidden="true"></i>10000
+               </div>
+               <div class="col-1">
+                  <select name="quantity" class="select_quantity">
+                     <option>1</option>
+                     <option>2</option>
+                     <option>3</option>
+                     <option>4</option>
+                  </select>
+               </div>
+               <div class="col-2">
+                  <button class="product_button">
+                  <i class="fa fa-times" aria-hidden="true" style="font-size: 16px;margin-right: 10px"></i>
+                  Remove
+                  </button>
+               </div>
+            </div>
+            <div class="row checked_product">
+               <div class="col-2">
+                  <img src="./assets/items/electronics/mobiles/1.png"/>
+               </div>
+               <div class="col-4 item_name">
+                  Samsung Galexy Note 8
+               </div>
+               <div class="col-3 item_price">
+                  <i class="fa fa-inr" aria-hidden="true"></i>10000
+               </div>
+               <div class="col-1">
+                  <select name="quantity" class="select_quantity">
+                     <option>1</option>
+                     <option>2</option>
+                     <option>3</option>
+                     <option>4</option>
+                  </select>
+               </div>
+               <div class="col-2">
+                  <button class="product_button">
+                  <i class="fa fa-times" aria-hidden="true" style="font-size: 16px;margin-right: 10px"></i>
+                  Remove
+                  </button>
+               </div>
+            </div>
+            <div class="row" id="checked_title" >
+               <div class="col-6">  
+               </div>
+               <div class="col-2" style="padding-left:60px">
+                  Subtotal
+               </div>
+               <div class="col-2">
+                  3 items
+               </div>
+               <div class="col-2">
+                  30000
+               </div>
+            </div>
+         </div>
+      
+
+<div style="background:#F4F4F4 ">
+            <form id="user_details">
+               <label style="text-align: center; font-size: 20px; font-weight: bolder">User Details</label>
+               <label>Full Name</label><input type="text" placeholder="Full name" required/>
+               <label>Mobile number</label><input type="text" placeholder="Mobile no"required/>
+               <label>Pin Code</label><input type="text" placeholder="Pincode" required/>
+               <label> Address</label>
+               <textarea placeholder="Address" required>
+               </textarea>
+               <input type="submit" value="Deliver to this address"/>
+            </form>
+         </div>
+         <div id="footer">
+            <ul>
+               <li><a href="#phone">Contact Us</a></li>
+               <li ><a>About Us</a>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </body>
+   
+</html>
