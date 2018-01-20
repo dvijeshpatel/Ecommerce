@@ -158,11 +158,12 @@ a:hover {
   flex-wrap: wrap;
   display: flex;
   margin-bottom: 10px;
+    min-height: 600px;
 }
 
 .single_product {
   max-height: 250px;
-  margin: 50px;
+  margin: 10px;
   display: flex;
   max-width: 500px;
   border: 2px solid;
@@ -173,15 +174,16 @@ a:hover {
   padding-top: 40px;
 }
 
-#product_left {
+.product_left {
 }
 
-#product_right {
-  margin-left: 50px;
+.product_right {
+  margin-left: 10px;
 }
 
-img {
+.product_image {
   max-width: 200px;
+    max-height: 150px;
 }
 
 .product_button {
