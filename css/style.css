@@ -152,7 +152,13 @@ a:hover {
 #menu li:hover ul li {
   display: block;
 }
-
+#filter_menu{
+    min-height: 30px;
+    background: #CC411B;
+    display: flex;
+    border-radius: 10px;
+    color:white;
+}
 #product_box {
   background: #F4F4F4;
   flex-wrap: wrap;

@@ -33,7 +33,7 @@
       </header>
       <div id="navigation_bar">
         <ul id="menu">
-          <li  onClick=" clickOnItem('','');"><a href="#"><i class="fa fa-home" aria-hidden="true"></i>
+          <li ><a  onclick="document.location.href = './index.html';"><i class="fa fa-home" aria-hidden="true"></i>
             </a>
           </li>
           <li>
@@ -41,7 +41,7 @@
             <i class="fa fa-caret-down" aria-hidden="true"></i>
             <ul>
               <li id="mobiles" ><a class="filterable">Mobiles</a></li>
-              <li id="laptops" ><a  class="filterable">Laptops</a></li>
+              <li id="laptops" ><a class="filterable">Laptops</a></li>
               <li id="cameras" ><a class="filterable">Cameras</a></li>
             </ul>
           </li>
@@ -76,6 +76,9 @@
         <input type="text" placeholder="search for item " id="search"/>
         <i id="search_button" class="fa fa-search" aria-hidden="true"></i>
       </div>
+        <div id="filter_menu">
+           
+        </div>
       <div id="product_box">
       <!--  <div class="single_product">
           <div class="product_left">

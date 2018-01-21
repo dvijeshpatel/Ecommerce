@@ -31,52 +31,54 @@
             </button>
             <!-- <button  id="checout" >Checkout</button>-->
          </header>
-         <div id="navigation_bar">
-            <ul id="menu">
-               <li  onClick=" clickOnItem('','');"><a href="#"><i class="fa fa-home" aria-hidden="true"></i>
-                  </a>
-               </li>
-               <li>
-                  <a>Electronics</a>
-                  <i class="fa fa-caret-down" aria-hidden="true"></i>
-                  <ul>
-                     <li id="mobiles" onClick=" clickOnItem('electronics','mobiles');"><a>Mobiles</a></li>
-                     <li id="laptops" onClick=" clickOnItem('electronics','laptops');"><a>Laptops</a></li>
-                     <li id="cameras" onClick=
-                        " clickOnItem('electronics','cameras');"><a>Cameras</a></li>
-                  </ul>
-               </li>
-               <li>
-                  <a href="#">Appliances</a>
-                  <i class="fa fa-caret-down" aria-hidden="true"></i>
-                  <ul>
-                     <li onClick=" clickOnItem('appliances','telivisons');"><a>Televisions</a></li>
-                     <li onClick="clickOnItem('appliances','washing_machines');"><a>Washing Machines</a></li>
-                     <li onClick="clickOnItem('appliances','refrigarators');"><a>Refrigarator</a></li>
-                  </ul>
-               </li>
-               <li>
-                  <a href="#">Furniture</a>
-                  <i class="fa fa-caret-down" aria-hidden="true"></i>
-                  <ul>
-                     <li onClick=" clickOnItem('fernitures','beds');"><a>Bed</a></li>
-                     <li onClick=" clickOnItem('fernitures','sofas');"><a>Sofa</a></li>
-                     <li  onClick=" clickOnItem('fernitures','chairs');"><a>Chairs</a></li>
-                  </ul>
-               </li>
-               <li>
-                  <a href="#">Sports</a>
-                  <i class="fa fa-caret-down" aria-hidden="true"></i>
-                  <ul>
-                     <li><a>Cricket</a></li>
-                     <li><a>Badminton</a></li>
-                     <li><a>Football</a></li>
-                  </ul>
-               </li>
+          <div id="navigation_bar">
+        <ul id="menu">
+          <li ><a  onclick="goToHome();"><i class="fa fa-home" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a>Electronics</a>
+            <i class="fa fa-caret-down" aria-hidden="true"></i>
+            <ul>
+              <li id="mobiles" ><a class="filterable">Mobiles</a></li>
+              <li id="laptops" ><a class="filterable">Laptops</a></li>
+              <li id="cameras" ><a class="filterable">Cameras</a></li>
             </ul>
-            <input type="text" placeholder="search for item " id="search"/>
-            <i id="search_button" class="fa fa-search" aria-hidden="true"></i>
-         </div>
+          </li>
+          <li>
+            <a href="#">Appliances</a>
+            <i class="fa fa-caret-down" aria-hidden="true"></i>
+            <ul>
+              <li><a  class="filterable">Televisions</a></li>
+              <li><a class="filterable">Washing Machines</a></li>
+              <li><a class="filterable">Refrigarator</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Furniture</a>
+            <i class="fa fa-caret-down" aria-hidden="true"></i>
+            <ul>
+              <li><a  class="filterable">Bed</a></li>
+              <li><a  class="filterable">Sofa</a></li>
+              <li><a  class="filterable">Chairs</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Sports</a>
+            <i class="fa fa-caret-down" aria-hidden="true"></i>
+            <ul>
+              <li><a  class="filterable"> Cricket</a></li>
+              <li><a  class="filterable">Badminton</a></li>
+              <li><a  class="filterable">Football</a></li>
+            </ul>
+          </li>
+        </ul>
+        <input type="text" placeholder="search for item " id="search"/>
+        <i id="search_button" class="fa fa-search" aria-hidden="true"></i>
+      </div>
+        <div id="filter_menu">
+           
+        </div>
         <div id="checked_box">
             <div class="row" id="checked_title" >
                <div class="col-6">  
@@ -90,7 +92,9 @@
                <div class="col-2">
                </div>
             </div>
-            <div class="row checked_product">
+            <div id="displayItems">
+            </div>
+        <!--    <div class="row checked_product">
                <div class="col-2">
                   <img src="./assets/items/electronics/mobiles/1.png"/>
                </div>
@@ -164,7 +168,7 @@
                   Remove
                   </button>
                </div>
-            </div>
+            </div>-->
             <div class="row" id="checked_title" >
                <div class="col-6">  
                </div>
