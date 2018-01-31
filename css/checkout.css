@@ -265,9 +265,9 @@ table, th, td {
 	display: flex;
 	flex-wrap: wrap;
 	min-height:700px;
-    margin-top: 110px;
+    margin-top: 130px;
  }
- 
+
 .single-product {
 	border-color: bisque;
 	border-radius: 20px;
