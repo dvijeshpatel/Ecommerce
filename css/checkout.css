@@ -240,6 +240,9 @@ table, th, td {
 	justify-content: center;
 	width: 30px;
  }
+ .btn-plus:hover, .btn-minus:hover {
+	cursor: pointer;
+ }
  
 .quantity {
 	height: 30px;
@@ -253,7 +256,9 @@ table, th, td {
 	height: 40px;
 	width: 50%;
  }
- 
+ .remove-button:hover{
+    cursor: pointer;
+}
 .cart-table tr:nth-last-child(1) {
 	background-color: #CC411B;
 	color: white;
